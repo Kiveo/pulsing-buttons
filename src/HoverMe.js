@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const pulse = keyframes`
@@ -36,7 +36,6 @@ const StyledButton = styled.button`
 `;
 
 const HoverMe = () => {
-  const [active, setActive] = useState(false);
   return (
     <div>
       <StyledButton>
@@ -65,7 +64,7 @@ const HoverMe = () => {
           <rect
             class="outline"
             stroke="none"
-            stroke-width="3"
+            strokeWidth="3"
             x="2"
             y="1"
             width="246"
@@ -75,9 +74,9 @@ const HoverMe = () => {
           />
         </svg>
       </StyledButton>
-      {active && <span style={{ display: "block" }}>Activated</span>}
+
+      {/* // TODO convert to separate components/sub-components */}
       <StyledButton>
-        {/* <SampleSvg /> */}
         <svg width="250" viewBox="0 0 250 50">
           <rect
             class="inside"

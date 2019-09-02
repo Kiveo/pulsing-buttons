@@ -1,0 +1,17 @@
+<svg class="selector" width="50" height="50" viewBox="0 0 100 100">
+  <line
+    class="selector__line"
+    stroke="black"
+    strokeWidth="10"
+    y1="25"
+    y2="75"
+  />
+  <polyline
+    class="selector__arrow"
+    stroke="black"
+    strokeWidth="5"
+    points="20,10 45,30 70,50 45,70 20,90 20,10"
+    fill="none"
+  />
+  <ellipse class="selector__dot" cx="90" cy="50" rx="10" ry="10" />
+</svg>
